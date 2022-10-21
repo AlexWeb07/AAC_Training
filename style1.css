@@ -1,0 +1,242 @@
+/* Sign Up Page */
+*{
+    margin: 0%;
+    padding: 0%;
+}
+html{
+    font-size: 16px;
+    --clr1:rgb(49, 70, 255);
+    --clr2:rgb(99, 116, 244);
+    --clr3:rgb(186, 185, 240);
+    --clr4:rgb(188, 135, 43);
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.container h2{
+    font-size: 2.5rem;
+    margin-top: 0.625rem;
+    color: rgb(230, 253, 255);
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    border: 1px solid white;
+    border-radius: 30px;
+    text-align: center;
+    width: 40.625rem;
+    height: 40.625rem;
+}
+.container table{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3.125rem;
+    background-color:transparent;
+    width: 40.625rem;
+    height: 31.875rem;
+}
+.container tr{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    width: 40.625rem;
+    height: 3.1875rem;
+}
+.fld{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 3.125rem;
+    font-size: 1.375rem;
+    width: 20.3125rem;
+    height: 3.1875rem;
+    color: rgb(170, 178, 255);
+    font-family: 'Merriweather', serif;
+}
+.value{
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0.0625rem;
+    width: 15.9375rem;
+    height: 2.1875rem;
+    color:rgb(255, 250, 176);
+    border-radius: 0.625rem;
+    font-size: 1.25rem;
+    padding-left: 0.625rem;
+    border: none;
+    padding-right: 0.625rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.val{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 20.3125rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 3.1875re;
+}
+select{
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    border: none;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 17.187rem;
+    height: 2.1875rem;
+    color:rgb(255, 255, 255);
+    border-radius: 0.625rem;
+    font-size: 1.25rem;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+select option{
+    width: 100%;
+    height: 2.1875rem;
+    background-color: transparent;
+    color: blue;
+    text-align: center;
+    font-size: 1.125rem;
+    padding: 0.125rem;
+}
+.rad{
+    width: 0.9375rem;
+    height: 0.9375rem;
+
+}
+.val1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 20.3125rem;
+    height: 3.1875rem;
+    color: rgb(210, 214, 255);
+    font-size: 1.25rem;
+}
+.btn{
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    width: 9.375rem;
+    height: 2.5rem;
+    background-color: rgb(61, 78, 255);
+    color: white;
+    border: none;
+    border-radius: 1.25rem;
+    font-size: 1.25rem;
+    transition: .3s;
+}
+.btn:hover{
+    background-color: rgb(253, 253, 253);
+    color: rgb(75, 96, 231);
+}
+.already{
+    color: rgb(255, 135, 135);
+    font-weight: 600;
+    font-size: 1.25rem;
+    text-decoration: none;
+    padding: 1.25rem;
+}
+.already1{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: 1.375rem;
+}
+.already:hover{
+    color: rgb(143, 255, 141);
+}
+
+@media screen and (max-width:700px) {
+    html{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:600px) {
+    html{
+        font-size: 11px;
+    }
+}
+@media screen and (max-width:450px) {
+    body{
+        height: 100vh;
+    }
+    html{
+        font-size: 9px;
+    }
+    .container h2{
+        font-size: 3rem;
+
+    }
+    .container tr{
+        align-items: flex-start;
+        width: 40rem;
+        flex-direction: column;
+        height: 5.2rem;
+    }
+    .container table{
+        height: 80%;
+        width: 100%;
+        margin-top: 5rem;
+    }
+    .container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+        height: 60rem;
+    }
+    .fld{
+        align-items: center;
+        width: 100%;
+        margin-left: 8rem;
+    }
+    .val{
+        width: 100%;
+        margin-left: 2.5rem;
+        align-items: center;
+    }
+    .val1{
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+    }
+    .rad{
+        margin-right: 7px;
+        margin-left: 15px;
+    }
+    .btn{
+        margin-bottom: 0%;
+        margin: 0%;
+    }
+    .already{
+        margin-top: 0%;
+        margin: 0%;
+        position: relative;
+        top: -10%;
+        left: -5%;
+    }
+}
+@media screen and (max-width:375px) {
+    html{
+        font-size: 7px;
+    }
+    
+}
